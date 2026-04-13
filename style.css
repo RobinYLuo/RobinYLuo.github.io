@@ -46,7 +46,7 @@ body {
   min-height: 68px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 20px;
 }
 
@@ -84,7 +84,7 @@ body {
 
 .hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.5fr) 280px;
+  grid-template-columns: 280px minmax(0, 1.5fr);
   gap: 48px;
   align-items: start;
   padding-bottom: 24px;
@@ -152,6 +152,7 @@ body {
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 16px;
+  justify-self: start;
 }
 
 .photo-box {
