@@ -40,7 +40,7 @@
         "Robin (Yifan) Luo"
       ],
       "url": "https://robinyluo.github.io/",
-      "image": "https://robinyluo.github.io/files/profile-photo-square.png",
+      "image": "https://robinyluo.github.io/files/profile-photo.png",
       "jobTitle": "Ph.D. Candidate in Finance",
       "affiliation": {
         "@type": "CollegeOrUniversity",
@@ -90,7 +90,7 @@
 }
 </style>
 <style id="compact-layout-adjustments">
-/* A narrower, centered page, without changing its content. */
+/* Preserve the compact, centered website layout and typography. */
 .container, .topbar-inner {
   width: 70% !important;
   max-width: 840px !important;
@@ -98,28 +98,37 @@
   margin-right: auto !important;
   box-sizing: border-box;
 }
-/* Scale typography consistently through rem-based sizes; keep it legible. */
 html { font-size: 85%; }
-/* Keep the frame tight and the photo at 70% of the prior compact version. */
 .hero {
   display: flex !important;
   align-items: center;
   gap: 2rem;
 }
+/* Original rectangular photo, displayed small, without any frame. */
 .profile-card {
   display: block !important;
   flex: 0 0 auto !important;
   width: fit-content !important;
   max-width: 100% !important;
-  padding: 10px !important;
+  padding: 0 !important;
   margin: 0 !important;
-  box-sizing: border-box;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
 }
 .profile-photo {
   display: block !important;
   width: 194px !important;
   max-width: 100% !important;
   height: auto !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
 }
 .hero-copy { flex: 1 1 0; min-width: 0; }
 @media (max-width: 800px) {
@@ -131,31 +140,6 @@ html { font-size: 85%; }
   .container, .topbar-inner { width: 92% !important; }
   .hero { flex-direction: column !important; align-items: flex-start; }
   .profile-photo { width: 137px !important; }
-}
-/* Single circular portrait: no card, border, padding, or shadow. */
-.profile-card {
-  padding: 0 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  overflow: visible !important;
-}
-.profile-photo {
-  aspect-ratio: 1 / 1 !important;
-  height: 194px !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 0 !important;
-  border: 0 !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
-@media (max-width: 800px) {
-  .profile-photo { height: 147px !important; }
-}
-@media (max-width: 560px) {
-  .profile-photo { height: 137px !important; }
 }
 </style>
 </head>
@@ -172,7 +156,7 @@ html { font-size: 85%; }
 <main class="container">
 <section class="hero" id="about">
 <aside aria-label="Profile photo" class="profile-card">
-<img alt="Robin Yifan Luo" class="profile-photo" src="files/profile-photo-square.png" />
+<img alt="Robin Yifan Luo" class="profile-photo" src="files/profile-photo.png" />
 </aside>
 <div class="hero-copy">
 <h1>Robin Yifan Luo</h1>
