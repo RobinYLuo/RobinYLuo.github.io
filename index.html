@@ -132,6 +132,31 @@ html { font-size: 85%; }
   .hero { flex-direction: column !important; align-items: flex-start; }
   .profile-photo { width: 137px !important; }
 }
+/* Single circular portrait: no card, border, padding, or shadow. */
+.profile-card {
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+.profile-photo {
+  aspect-ratio: 1 / 1 !important;
+  height: 194px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  border-radius: 50% !important;
+  border: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+@media (max-width: 800px) {
+  .profile-photo { height: 147px !important; }
+}
+@media (max-width: 560px) {
+  .profile-photo { height: 137px !important; }
+}
 </style>
 </head>
 <body>
