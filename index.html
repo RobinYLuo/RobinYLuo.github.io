@@ -100,7 +100,7 @@
 }
 /* Scale typography consistently through rem-based sizes; keep it legible. */
 html { font-size: 85%; }
-/* Make the photo's frame hug the actual photograph. */
+/* Keep the frame tight and the photo at 70% of the prior compact version. */
 .hero {
   display: flex !important;
   align-items: center;
@@ -117,7 +117,7 @@ html { font-size: 85%; }
 }
 .profile-photo {
   display: block !important;
-  width: 277px !important;
+  width: 194px !important;
   max-width: 100% !important;
   height: auto !important;
 }
@@ -125,12 +125,12 @@ html { font-size: 85%; }
 @media (max-width: 800px) {
   .container, .topbar-inner { width: 90% !important; }
   .hero { gap: 1.3rem; }
-  .profile-photo { width: 210px !important; }
+  .profile-photo { width: 147px !important; }
 }
 @media (max-width: 560px) {
   .container, .topbar-inner { width: 92% !important; }
   .hero { flex-direction: column !important; align-items: flex-start; }
-  .profile-photo { width: 195px !important; }
+  .profile-photo { width: 137px !important; }
 }
 </style>
 </head>
